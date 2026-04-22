@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 98%;
+    --foreground: 20 20% 14%;
+
+    --card: 30 25% 97%;
+    --card-foreground: 20 20% 14%;
+
+    --popover: 30 33% 98%;
+    --popover-foreground: 20 20% 14%;
+
+    --primary: 15 75% 50%;
+    --primary-foreground: 30 33% 98%;
+
+    --secondary: 45 60% 92%;
+    --secondary-foreground: 20 20% 14%;
+
+    --muted: 30 15% 93%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 150 35% 45%;
+    --accent-foreground: 30 33% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 30 33% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 15 75% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 30 25% 96%;
+    --sidebar-foreground: 20 15% 30%;
+    --sidebar-primary: 15 75% 50%;
+    --sidebar-primary-foreground: 30 33% 98%;
+    --sidebar-accent: 45 40% 90%;
+    --sidebar-accent-foreground: 20 20% 14%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 15 75% 50%;
+
+    --warm-gold: 40 70% 55%;
+    --warm-cream: 38 50% 95%;
+    --herb-green: 150 35% 45%;
+    --spice-red: 5 65% 48%;
+  }
+
+  .dark {
+    --background: 20 20% 8%;
+    --foreground: 30 15% 92%;
+
+    --card: 20 18% 12%;
+    --card-foreground: 30 15% 92%;
+
+    --popover: 20 18% 12%;
+    --popover-foreground: 30 15% 92%;
+
+    --primary: 15 75% 55%;
+    --primary-foreground: 20 20% 8%;
+
+    --secondary: 30 15% 18%;
+    --secondary-foreground: 30 15% 92%;
+
+    --muted: 20 12% 18%;
+    --muted-foreground: 30 10% 60%;
+
+    --accent: 150 30% 35%;
+    --accent-foreground: 30 15% 92%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 30 15% 92%;
+
+    --border: 20 12% 20%;
+    --input: 20 12% 20%;
+    --ring: 15 75% 55%;
+
+    --sidebar-background: 20 18% 10%;
+    --sidebar-foreground: 30 10% 85%;
+    --sidebar-primary: 15 75% 55%;
+    --sidebar-primary-foreground: 20 20% 8%;
+    --sidebar-accent: 20 12% 16%;
+    --sidebar-accent-foreground: 30 10% 85%;
+    --sidebar-border: 20 12% 18%;
+    --sidebar-ring: 15 75% 55%;
+
+    --warm-gold: 40 60% 45%;
+    --warm-cream: 30 15% 15%;
+    --herb-green: 150 30% 35%;
+    --spice-red: 5 55% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+#lovable-badge {
+  display: none !important;
+}
